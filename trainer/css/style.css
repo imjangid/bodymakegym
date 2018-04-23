@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+html {
+  background:#96d2ea;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.absolute-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.info {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.dynamic-table {
+  border: 1px black solid;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+.dynamic-table caption {
+  border: inherit;
+  padding: 5px;
+  font-size: 20px;
+}
+.dynamic-table tr {
+  border: 1px black solid;
+}
+.dynamic-table tr:hover {
+  background: highlight;
+}
+.dynamic-table tr:hover td:nth-child(7) button {
+  visibility: visible;
+}
+.dynamic-table tr td:hover {
+  cursor: pointer;
+}
+.dynamic-table tr th, .dynamic-table tr td {
+  border: 1px black solid;
+  padding: 8px;
+}
+.dynamic-table tr th input, .dynamic-table tr td input {
+  padding: 4px;
+  width: calc(100% - 16px);
+}
+.dynamic-table tr th button, .dynamic-table tr td button {
+  cursor: pointer;
+}
+.dynamic-table tr th button.add-line, .dynamic-table tr th button.validate, .dynamic-table tr td button.add-line, .dynamic-table tr td button.validate {
+  width: 30px;
+  height: 30px;
+}
+.dynamic-table tr th button.edit, .dynamic-table tr th button.delete, .dynamic-table tr td button.edit, .dynamic-table tr td button.delete {
+  visibility: hidden;
+  margin: 3px;
+}
+.addition-row button{
+    background-color: transparent;
+    font-size: 25px;
+    border: 0;
+    
+}
+.addition-row button:hover{
+     background-color: gold;
+}
+.dynamic-table .addition-row td:nth-of-type(2) {
+  background-color: black;
+  opacity: 0.3;
+}
+.dynamic-table .addition-row td:nth-of-type(3) {
+  background-color: black;
+  opacity: 0.3;
+}
+.dynamic-table .addition-row td:nth-of-type(4) {
+  background-color: black;
+  opacity: 0.3;
+}
+.dynamic-table .addition-row td:nth-of-type(5) {
+  background-color: black;
+  opacity: 0.3;
+}
+.dynamic-table .addition-row td:nth-of-type(6) {
+  background-color: black;
+  opacity: 0.3;
+}
+.dynamic-table .addition-row td:nth-of-type(7) {
+  background-color: black;
+  opacity: 0.3;
+}
+input{
+    background-color: #eae28c;
+    border: 1px;
+    box-shadow: 2px 2px 2px gray;
+    font-size: 20px;
+}

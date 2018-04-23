@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thnks</title>
+		<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body,html{
+			z-index: 1;
+				widows: 100%;
+				height: 100%;
+				overflow: hidden;
+				/*			background-color: #FF675D;*/
+				animation-name: back;
+				animation-duration: 4s;
+				animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				animation-direction: alternate-reverse;
+			}
+			.center{
+				width: 100%;
+				text-align: center;
+				position: absolute;
+				z-index: 1000000;
+				text-align:center;
+				margin-top: 20%;
+			}
+			.thnaks{
+				widows: 100%;
+				text-align: center;
+				font-family:Josefin Sans, sans-serif;
+				font-size:9em;
+				text-shadow: 0 -3px 0 #333,
+				0 6px 8px rgba(0,0,0,.4),
+				0 9px 10px rgba(0,0,0,.15),
+				0 30px 10px rgba(0,0,0,.18),
+				0 15px 10px rgba(0,0,0,.21);
+			}
+			.sub-thanks{
+				color: #68D79F;
+				text-shadow: 2px 2px 4px black;
+				font-family:Josefin Sans, sans-serif;
+				font-size: 3.5em;
+			}
+			@keyframes back{
+				0%{
+					background-color: #E90046;
+				}
+				100%{
+						background-color: #70E18B;
+				}
+			}
+		.back-font>#body{
+			animation-name: color_change;
+			animation-direction: alternate-reverse;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-delay: 0.5s;
+		}
+		.back-font>#maker{
+			animation-name: color_change;
+			animation-direction: alternate-reverse;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+		}
+		.back-font>#gym{
+			animation-name: color_change;
+			animation-direction: alternate-reverse;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-delay: 1s;
+		}
+		@keyframes color_change{
+		0%{
+			text-shadow: 4px 4px 10px #112432;
+			color: #DFAA00;
+		}
+		100%{
+			text-shadow: 4px 4px 10px #322400;
+			color: gold;
+		}
+		}
+		.back-font{
+			z-index: 5;
+			top:0;
+			position: absolute;
+			font-weight: 500;
+			font-size: 45vh;
+		}
+		.back-font br{
+			display: block;
+			margin: -15vh 0;
+		}
+		.loading{
+			font-family:Josefin Sans, sans-serif;
+			width: 100%;
+			font-size: 1vw;
+			bottom: 0;
+			position: absolute;
+			right: 1;
+		}
+		.loader{
+			display:block;
+			width: 1px;
+			animation-name: load;
+			animation-direction: normal;
+			animation-iteration-count: 1;
+			animation-duration: 5s;
+			background-color: black;
+			height: 5px;
+			width: 100%;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes load {
+			0%{
+				background-color: #FFFE00;
+				width: 0px;
+			}
+			100%{
+				background-color: black;
+				width: 100%;
+			}
+		}
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		
+	</head>
+	<body>
+		
+		
+		<div class="center">
+			<div class="thnaks">
+				Thanks for Beliveing Us
+			</div>
+			<div class="sub-thanks">Your request has been received</div>
+		</div>
+		
+		<div class="back-font">
+			<div id="body">Body <br></div>
+			<div id="maker">Maker<br></div>
+			<div id="gym">Gym <br></div>
+		</div>
+		<div class="loading">
+			<div class="loader">
+				
+			</div>
+			redirecting to homepage
+			
+		</div>
+		<script>
+			setTimeout(function(){ window.location.href = "index.html"; }, 4500);
+			
+		</script>
+	</body>
+</html>

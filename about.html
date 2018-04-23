@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About us</title>
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Allerta+Stencil|Special+Elite'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<style>
+		*{
+			margin:0;
+			padding:0;}
+		html,body{
+			background-color: coral;
+			width: 100%;
+			overflow: hidden;
+		}
+		img{
+			width: 100%;
+			align-items: center;
+			border-radius: 2px;
+		}
+		.image{
+			width: 100%;
+			position: absolute;
+			display: block;
+			margin:3% 2%;
+			width: 50%;
+		}
+		#riya{
+			position: absolute;
+			font-size: 5vw;
+			margin:20% 42%;
+			color: #FF2344;
+		}
+		#vijay{
+			position: absolute;
+			font-size: 5vw;
+			margin:35% 6%;
+			color: #0061FF;
+		}
+		#ash{
+			position: absolute;
+			font-size: 5vw;
+			margin:15% 32%;
+			color: #00FFFF;
+		}
+		#sharda{
+			position: absolute;
+			font-size: 5vw;
+			margin:25% 22%;
+			color: #FFFF00;
+		}
+		.shadow{
+			text-shadow: 2px 2px 4px black;
+			display: none;
+		}
+		</style>
+		
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Body Maker Gym</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href='index.html'>Home</a></li>
+						<li class='active'><a href='index.html'>About</a></li>
+						<li><a href='contact.html'>Contact</a></li>
+						<li><a href='findus.html'>Find Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="signup.html">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+						<li><a href="login.php">Login <i class="fa fa-user" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<div class="image">
+			<img id="image" src="data/developer.jpg" alt="">
+		</div>
+		
+		<div id="riya" class="shadow">Riya</div>
+		<div id="vijay" class="shadow">Vijay</div>
+		<div id="ash" class="shadow">Ash</div>
+		<div id="sharda" class="shadow">Ashish</div>
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+		<script src='https://use.fontawesome.com/7ee55d0e5e.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+		<script>
+			$("#image").hover(
+				function () {
+					$(".shadow").show();
+				}
+					);
+			$("#image").mouseout(
+				function () {
+					$(".shadow").hide();
+				}
+					)
+		</script>
+	</body>
+</html>
